@@ -1,0 +1,39 @@
+Setting up our NodeJS App: If you are not familiar with the basics of NodeJS, you can have a look at the following article https://www.geeksforgeeks.org/introduction-to-node-js/
+
+Follow the steps given below to set up our App.
+
+Create a new folder named “StockMarketAPI”.
+
+Create a new file with the name “Server.js”.
+
+Open terminal/GitBash in the folder and run the command given below.
+
+npm init -y
+Project Structure: The above command is used to initialize npm in our Project Folder. As of now, the project structure should look like this:
+
+
+Project Structure
+
+Now, we have initialized npm. The next step is to install the node modules which we would need in our project. To use the API in our project, we would use a node package named “axios”. Run the following command to install the package.
+
+$npm i axios
+Project Structure: Now the project folder should look like this:
+
+
+Project Structure after you install the package “axios”
+
+Now we have got the API details, initialized npm, and installed axios, we can now move forward to write code that allows us to fetch the details from the Stock Market Database, using our API.
+
+ 
+
+Follow the steps given below:
+
+First, we would have to tell our NodeApp that we are going to require the node package “axios”. For that, we have to write the code given below in our Server.js file. By writing this simple one-line given below, we allowed Node to use the package named “axios” in our application.
+
+var axios = require(“axios”).default;
+2. Now after this step, we have to copy and paste the options variable that was given in the API dashboard.
+
+
+Details related to the API in a variable named “options”
+
+You can either copy the code given below or copy it from the API dashboard. The code below is nothing but a simple variable named “object”, which contains the details of the API we are using. We have made a variable named “options”, which contains all the details related to the API we are using.
